@@ -131,6 +131,35 @@ namespace RadioBrowserWrapper
 
         #endregion
 
+        #region Server Info
+
+        /// <inheritdoc />
+        public async Task<ServerStats> GetServerStatsAsync(CancellationToken cancellation = default)
+        {
+            return await GetAsync<ServerStats, object>("/json/stats", null, cancellation);
+        }
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<ServerMirror>> GetServerMirrorsAsync(CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<ServerMirror>, object>("/json/servers", null, cancellation);
+        }
+
+        /// <inheritdoc />
+        public async Task<ServerConfig> GetServerConfigAsync(CancellationToken cancellation = default)
+        {
+            return await GetAsync<ServerConfig, object>("/json/config", null, cancellation);
+        }
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<string>> GetPrometheusMonitoringResultAsync(CancellationToken cancellation = default)
+        {
+            var result = await GetAsStringAsync<object>("/metrics", null, cancellation);
+            return result?.Split('\n');
+        }
+
+        #endregion
+
         #endregion
     }
 }
