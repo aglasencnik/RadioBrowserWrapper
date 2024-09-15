@@ -131,6 +131,16 @@ namespace RadioBrowserWrapper
 
         #endregion
 
+        #region Languages
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<Language>> GetLanguagesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<Language>, SimpleSearchOptions>($"/json/languages/{filter}", searchOptions, cancellation);
+        }
+
+        #endregion
+
         #region Server Info
 
         /// <inheritdoc />

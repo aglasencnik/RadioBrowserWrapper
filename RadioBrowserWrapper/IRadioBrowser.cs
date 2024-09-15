@@ -26,6 +26,22 @@ namespace RadioBrowserWrapper
 
         #endregion
 
+        #region Languages
+
+        /// <summary>
+        /// Gets the available languages.
+        /// </summary>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Simple search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="Codec"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        Task<IEnumerable<Language>> GetLanguagesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        #endregion
+
         #region Server Info
 
         /// <summary>
