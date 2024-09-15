@@ -1,4 +1,5 @@
 ﻿using RadioBrowserWrapper.Models;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -23,6 +24,60 @@ namespace RadioBrowserWrapper
         /// A task that represents the asynchronous operation.
         /// </returns>
         Task<IEnumerable<Codec>> GetCodecsAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        #endregion
+
+        #region Countries
+
+        /// <summary>
+        /// Gets the available countries.
+        /// </summary>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="Country"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        Task<IEnumerable<Country>> GetCountriesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        /// <summary>
+        /// Gets the available country codes.
+        /// </summary>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="CountryCode"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        [Obsolete("DEPRECATED: Please use countries instead of country codes. It has name and countrycode information.")]
+        Task<IEnumerable<CountryCode>> GetCountryCodesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        /// <summary>
+        /// Gets the available country states.
+        /// </summary>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="CountryState"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        Task<IEnumerable<CountryState>> GetCountryStatesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        /// <summary>
+        /// Gets the available country states by country.
+        /// </summary>
+        /// <param name="country">Country</param>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="CountryState"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        Task<IEnumerable<CountryState>> GetCountryStatesByCountryAsync(string country, string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
 
         #endregion
 

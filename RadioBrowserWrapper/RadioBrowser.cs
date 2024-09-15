@@ -131,6 +131,32 @@ namespace RadioBrowserWrapper
 
         #endregion
 
+        #region Countries
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<Country>> GetCountriesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<Country>, SimpleSearchOptions>($"/json/countries/{filter}", searchOptions, cancellation);
+        }
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<CountryCode>> GetCountryCodesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<CountryCode>, SimpleSearchOptions>($"/json/countrycodes/{filter}", searchOptions, cancellation);
+        }
+
+        public async Task<IEnumerable<CountryState>> GetCountryStatesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<CountryState>, SimpleSearchOptions>($"/json/states/{filter}", searchOptions, cancellation);
+        }
+
+        public async Task<IEnumerable<CountryState>> GetCountryStatesByCountryAsync(string country, string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<CountryState>, SimpleSearchOptions>($"/json/states/{country}/{filter}", searchOptions, cancellation);
+        }
+
+        #endregion
+
         #region Languages
 
         /// <inheritdoc />
