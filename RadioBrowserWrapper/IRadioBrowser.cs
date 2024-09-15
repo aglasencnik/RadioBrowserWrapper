@@ -35,10 +35,26 @@ namespace RadioBrowserWrapper
         /// <param name="searchOptions">Simple search options</param>
         /// <param name="cancellation">Cancellation token</param>
         /// <returns>
-        /// A collection of <see cref="Codec"/>.
+        /// A collection of <see cref="Language"/>.
         /// A task that represents the asynchronous operation.
         /// </returns>
         Task<IEnumerable<Language>> GetLanguagesAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
+
+        #endregion
+
+        #region Tags
+
+        /// <summary>
+        /// Gets the available tags.
+        /// </summary>
+        /// <param name="filter">Filter</param>
+        /// <param name="searchOptions">Simple search options</param>
+        /// <param name="cancellation">Cancellation token</param>
+        /// <returns>
+        /// A collection of <see cref="Tag"/>.
+        /// A task that represents the asynchronous operation.
+        /// </returns>
+        Task<IEnumerable<Tag>> GetTagsAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default);
 
         #endregion
 

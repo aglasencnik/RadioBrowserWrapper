@@ -141,6 +141,16 @@ namespace RadioBrowserWrapper
 
         #endregion
 
+        #region Tags
+
+        /// <inheritdoc />
+        public async Task<IEnumerable<Tag>> GetTagsAsync(string filter = null, SimpleSearchOptions searchOptions = null, CancellationToken cancellation = default)
+        {
+            return await GetAsync<IEnumerable<Tag>, SimpleSearchOptions>($"/json/tags/{filter}", searchOptions, cancellation);
+        }
+
+        #endregion
+
         #region Server Info
 
         /// <inheritdoc />
