@@ -3,20 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioBrowserWrapper", "RadioBrowserWrapper\RadioBrowserWrapper.csproj", "{D61301DC-98A8-4119-93F6-4B8D6D8F92E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioBrowserWrapper", "RadioBrowserWrapper\RadioBrowserWrapper.csproj", "{D61301DC-98A8-4119-93F6-4B8D6D8F92E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioBrowserWrapper.Demo", "RadioBrowserWrapper.Demo\RadioBrowserWrapper.Demo.csproj", "{233995BF-0B6B-4B23-B513-42140EDE73AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioBrowserWrapper.Demo", "RadioBrowserWrapper.Demo\RadioBrowserWrapper.Demo.csproj", "{233995BF-0B6B-4B23-B513-42140EDE73AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A346C6B-235F-4CDA-BCB2-6811A0699374}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		CONTRIBUTING.md = CONTRIBUTING.md
+		Icon.png = Icon.png
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioBrowserWrapper.Tests", "RadioBrowserWrapper.Tests\RadioBrowserWrapper.Tests.csproj", "{0EA6C7F5-167B-42FE-A504-2E506CE8621A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioBrowserWrapper.Tests", "RadioBrowserWrapper.Tests\RadioBrowserWrapper.Tests.csproj", "{0EA6C7F5-167B-42FE-A504-2E506CE8621A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

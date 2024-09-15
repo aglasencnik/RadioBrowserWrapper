@@ -2,6 +2,31 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>RadioBrowserWrapper</Title>
+    <Version>0.0.1</Version>
+    <Authors>Amadej Glasenčnik</Authors>
+    <Description>RadioBrowserWrapper is a lightweight, easy-to-use .NET wrapper for the Radio Browser API, enabling seamless integration with online radio stations and stream discovery.</Description>
+    <Copyright>Copyright (c) Amadej Glasenčnik 2024.</Copyright>
+    <PackageProjectUrl>https://github.com/aglasencnik/RadioBrowserWrapper</PackageProjectUrl>
+    <PackageIcon>Icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/aglasencnik/RadioBrowserWrapper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>csharp; dotnet; nuget; radio-browser</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
