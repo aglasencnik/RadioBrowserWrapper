@@ -4,7 +4,10 @@ namespace RadioBrowserWrapper.Tests;
 
 public class CountryTests
 {
-    private readonly IRadioBrowser _client = new RadioBrowser();
+    private readonly IRadioBrowser _client = new RadioBrowser(new RadioBrowserOptions
+    {
+        ServerUrl = "http://de1.api.radio-browser.info"
+    });
 
     [Fact]
     public async Task GetAllCountries()
