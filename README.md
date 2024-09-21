@@ -180,8 +180,6 @@ With many customizable search options and methods, there is plenty to explore wi
 
 If you find this project useful, consider supporting it by [buying me a coffee](https://www.buymeacoffee.com/aglasencnik). Your support is greatly appreciated!
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aglasencnik)
-
 ## Contributing
 
 Contributions are welcome! If you have a feature to propose or a bug to fix, create a new pull request.
