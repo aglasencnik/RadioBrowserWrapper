@@ -28,8 +28,8 @@ foreach (var codec in codecs)
 Console.WriteLine("\nTop 10 stations:");
 
 // Get top 10 stations
-var topStation = await radioBrowser.GetTopStationsByVotesAsync(10);
-foreach (var station in topStation)
+var topStations = await radioBrowser.GetTopStationsByVotesAsync(10);
+foreach (var station in topStations)
 {
     Console.WriteLine($"{station.Name} ({station.Url})");
 }
@@ -48,4 +48,4 @@ foreach (var station in gerStations)
 }
 
 // Vote for the first station
-await radioBrowser.VoteStationAsync(topStation.FirstOrDefault()!.StationUuid);
+await radioBrowser.VoteStationAsync(topStations.FirstOrDefault()!.StationUuid);
