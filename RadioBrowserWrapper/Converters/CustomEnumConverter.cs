@@ -2,8 +2,9 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Text.Json;
+using RadioBrowserWrapper.Enums;
 
-namespace RadioBrowserWrapper.Enums
+namespace RadioBrowserWrapper.Converters
 {
     /// <summary>
     /// Represents an attribute that defines the value of an enum member.

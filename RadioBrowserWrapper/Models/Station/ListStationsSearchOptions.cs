@@ -5,28 +5,22 @@ using System.Text.Json.Serialization;
 namespace RadioBrowserWrapper.Models
 {
     /// <summary>
-    /// Represents the simple search options.
+    /// Represents the search options for a list of stations.
     /// </summary>
-    public class SimpleSearchOptions
+    public class ListStationsSearchOptions
     {
         /// <summary>
         /// Gets or sets the order of the results.
         /// </summary>
         [JsonPropertyName("order")]
-        [JsonConverter(typeof(CustomEnumConverter<SimpleOrder>))]
-        public SimpleOrder Order { get; set; } = SimpleOrder.Name;
+        [JsonConverter(typeof(CustomEnumConverter<StationOrder>))]
+        public StationOrder Order { get; set; } = StationOrder.Name;
 
         /// <summary>
         /// Gets or sets whether to reverse the results.
         /// </summary>
         [JsonPropertyName("reverse")]
         public bool Reverse { get; set; } = false;
-
-        /// <summary>
-        /// Gets or sets whether to not count broken stations.
-        /// </summary>
-        [JsonPropertyName("hidebroken")]
-        public bool HideBroken { get; set; } = false;
 
         /// <summary>
         /// Gets or sets the offset of the results.
@@ -39,5 +33,11 @@ namespace RadioBrowserWrapper.Models
         /// </summary>
         [JsonPropertyName("limit")]
         public int Limit { get; set; } = 100000;
+
+        /// <summary>
+        /// Gets or sets whether to not count broken stations.
+        /// </summary>
+        [JsonPropertyName("hidebroken")]
+        public bool HideBroken { get; set; } = false;
     }
 }
