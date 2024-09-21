@@ -2,6 +2,8 @@
 
 [![NuGet version (RadioBrowserWrapper)](https://img.shields.io/nuget/v/RadioBrowserWrapper.svg?style=flat-square)](https://www.nuget.org/packages/RadioBrowserWrapper/)
 
+![GitHub License](https://img.shields.io/github/license/aglasencnik/RadioBrowserWrapper)
+
 **RadioBrowserWrapper** is a lightweight and intuitive .NET wrapper for the [Radio Browser API](https://www.radio-browser.info/), designed to make it easy for developers to integrate radio station search and stream discovery into their applications.
 
 Whether you're building a media player, an online radio directory, or any project that requires radio station information, this library provides a simple and streamlined interface to interact with the Radio Browser API.
