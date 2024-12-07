@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>RadioBrowserWrapper</Title>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Amadej Glasenčnik</Authors>
     <Description>RadioBrowserWrapper is a lightweight, easy-to-use .NET wrapper for the Radio Browser API, enabling seamless integration with online radio stations and stream discovery.</Description>
     <Copyright>Copyright (c) Amadej Glasenčnik 2024.</Copyright>
