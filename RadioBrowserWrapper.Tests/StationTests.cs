@@ -399,7 +399,7 @@ public class StationTests
     {
         var searchOptions = new AdvancedStationSearchOptions
         {
-            Name = "rock",
+            Name = "brian",
             Limit = 3
         };
 
@@ -407,7 +407,7 @@ public class StationTests
 
         Assert.NotNull(stations);
         Assert.NotEmpty(stations);
-        Assert.True(stations.Count() <= searchOptions.Limit);
+        Assert.True(stations.Count() == 3);
     }
 
     [Fact]

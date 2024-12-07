@@ -103,22 +103,19 @@ namespace RadioBrowserWrapper.Models
         /// Gets or sets whether the station has geo info.
         /// </summary>
         [JsonPropertyName("has_geo_info")]
-        [JsonConverter(typeof(CustomEnumConverter<StationInfo>))]
-        public StationInfo HasGeoInfo { get; set; } = StationInfo.True;
+        public bool? HasGeoInfo { get; set; }
 
         /// <summary>
         /// Gets or sets whether the station has extended info.
         /// </summary>
         [JsonPropertyName("has_extended_info")]
-        [JsonConverter(typeof(CustomEnumConverter<StationInfo>))]
-        public StationInfo HasExtendedInfo { get; set; } = StationInfo.True;
+        public bool? HasExtendedInfo { get; set; }
 
         /// <summary>
         /// Gets or sets whether the station is https.
         /// </summary>
         [JsonPropertyName("is_https")]
-        [JsonConverter(typeof(CustomEnumConverter<StationInfo>))]
-        public StationInfo IsHttps { get; set; } = StationInfo.True;
+        public bool? IsHttps { get; set; }
 
         /// <summary>
         /// Gets or sets the order of the results.
